@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block body %}
-    <form method="POST" action="" enctype="multipart/form-data">
+    <form method="POST" action="" enctype="multipart/form-data" class="mt-3">
         {% csrf_token %}
         {{ form.as_p }}
         <div>
-            <button type="submit">Submit Form</button>
+            <button type="submit" class="btn btn-success">Submit Form</button>
         </div>
     </form>
 {% endblock %}
